@@ -3,6 +3,8 @@ package com.SolidPrinciples.Liskov;
 //https://medium.com/@javatechie/solid-design-principle-java-ae96a48db97
 public class Medium2 {}
 //we can consider Facebook is complete substitute of SocialMedia class , both can be replaced without any interrupt
+//objects of a superclass shall be replaceable with objects of its subclasses without breaking the application.
+//if class A is a subtype of class B, then we should be able to replace B with A without interrupting the behavior of the program.
 interface SocialMedia {
     public void chatWithFriends();
     public void publishPosts();
