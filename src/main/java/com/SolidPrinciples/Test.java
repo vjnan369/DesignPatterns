@@ -1,39 +1,19 @@
 package com.SolidPrinciples;
 //SOLID
 //Liscov substitution principle
+public class Test{}
 
-public class Test {
+@FunctionalInterface
+interface TestInterface{
+    void testMethod(int data);
 }
 
-interface BankCard{
-    void doPayment();
-}
 
-class DebitCard implements BankCard{
-    @Override
-    public void doPayment(){
-        //do payment
-    }
-}
-
-class CreditCard implements BankCard{
-    @Override
-    public void doPayment(){
-        //do payment
-    }
-}
-
-class ShoppingMall{
-    BankCard bankCard;
-
-    public ShoppingMall(BankCard bankCard) {
-        this.bankCard = bankCard;
-    }
-
+class MainTester{
     public static void main(String[] args) {
-        BankCard debitCard = new DebitCard();
-        ShoppingMall shoppingMall = new ShoppingMall(debitCard);
-        debitCard.doPayment();
+        TestInterface testInterface = (data) -> System.out.println("this is teset method! " + data);
+
+        testInterface.testMethod(23);
     }
 }
 

@@ -21,7 +21,8 @@ interface StaticInterface{
 }
 
 //Functional Interfaces
-//A functional interface is basically an interface with only 1 abstract method in it. It can contain default methods, static methods, or override methods from the Object class, but restricted to only using 1 abstract method.
+//A functional interface is basically an interface with only 1 abstract method in it. It can contain default methods, static methods,
+// or override methods from the Object class, but restricted to only using 1 abstract method.
 //A functional interface eliminates the need of writing anonymous classes and helps us write lambda expressions
 //https://medium.com/swlh/functional-interfaces-and-lambda-expressions-java-8-series-part-1-4cc60f2542ba
 @FunctionalInterface
@@ -85,7 +86,8 @@ class LambdaTester2 implements Calculator{
 
 //Method References
 //Referring to static method.
-//It is nothing but an easier way of writing a lambda expression. It is done by referring, the single abstract method, to another existing method. This is achieved with help of a double colon (::) operator introduced in Java 8
+//It is nothing but an easier way of writing a lambda expression. It is done by referring, the single abstract method, to another existing method.
+// This is achieved with help of a double colon (::) operator introduced in Java 8
 
 @FunctionalInterface
 interface Calculator2{
@@ -117,7 +119,8 @@ class Tester{
     public static void main(String[] args) {
         Calculator2 c2 = Tester::sum;
         System.out.println(c2.calculate(11, 12));
-        //This is very useful in terms of reusability. Instead of defining our very own sum method, we can also reuse the existing sum method of the Integer wrapper class which will basically give the same result —
+        //This is very useful in terms of reusability. Instead of defining our very own sum method, we can also reuse
+        // the existing sum method of the Integer wrapper class which will basically give the same result —
         Calculator2 calculator2 = Integer::sum;
         System.out.println(calculator2.calculate(5, 7));
 
