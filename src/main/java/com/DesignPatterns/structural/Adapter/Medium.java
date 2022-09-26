@@ -1,7 +1,8 @@
 package com.DesignPatterns.structural.Adapter;
 //https://medium.com/@pramodayajayalath/adapter-design-pattern-3307ada690db
 //Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
-//The adapter pattern converts the interface of a class into another interface clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
+//The adapter pattern converts the interface of a class into another interface clients expect.
+// Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
 public class Medium {
 }
 

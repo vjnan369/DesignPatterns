@@ -1,4 +1,4 @@
-package com.MultiThreading;
+package com.MultiThreading.DeamonThread;
 
 import static java.lang.Thread.sleep;
 

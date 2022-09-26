@@ -1,7 +1,8 @@
 package com.SolidPrinciples.DIP;
 
 //Dependency Inversion Principle (DIP)
-//we must use abstraction (abstract classes and interfaces) instead of concrete implementations. High-level modules should not depend on the low-level module but both should depend on the abstraction
+//we must use abstraction (abstract classes and interfaces) instead of concrete implementations.
+// High-level modules should not depend on the low-level module but both should depend on the abstraction
 //High-level modules should not depend on low-level modules. Both should depend on abstractions.
 //Abstractions should not depend on details. Details should depend on abstractions.
 public class Medium {}

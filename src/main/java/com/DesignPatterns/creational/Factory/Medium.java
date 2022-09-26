@@ -1,6 +1,11 @@
 package com.DesignPatterns.creational.Factory;
-//Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+//Factory Method is a creational design pattern that provides an interface for creating objects in a superclass,
+// but allows subclasses to alter the type of objects that will be created.
 //https://medium.com/@sahoosunilkumar/understanding-factory-method-design-pattern-6e247b1fb9f
+/*
+The Factory Method separates product construction code from the code that actually uses the product.
+Therefore it’s easier to extend the product construction code independently from the rest of the code.
+ */
 public class Medium {
 }
 
@@ -112,7 +117,9 @@ abstract class Payment3 implements IPayment {
 }
 
 class PaytmPayment3 extends Payment3{
-    public PaytmPayment3() {
+    public
+
+    PaytmPayment3() {
         super();
     }
 

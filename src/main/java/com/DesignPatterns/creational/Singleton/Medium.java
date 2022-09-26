@@ -2,8 +2,8 @@ package com.DesignPatterns.creational.Singleton;
 
 import java.io.Serializable;
 
-//Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
-//Provide a global access point to that instance
+//Singleton is a creational design pattern that lets you ensure that a class has only one instance,
+// while providing a global access point to this instance.
 // ex: database connections,sockets, files
 //https://medium.com/@kevalpatel2106/how-to-make-the-perfect-singleton-de6b951dfdb0
 public class Medium {
