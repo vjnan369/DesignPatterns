@@ -3,7 +3,8 @@ package com.DesignPatterns.structural.Composite;
 import java.util.ArrayList;
 import java.util.List;
 
-//Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.
+//Composite is a structural design pattern that lets you compose objects into tree structures and then work with
+// these structures as if they were individual objects.
 //The Composite pattern lets you run a behavior recursively over all components of an object tree.
 //https://medium.com/javarevisited/composite-design-pattern-java-9cd0964d3b12
 //When we want to implement the same interface on leaves and composites so that they are handled in the same way.
