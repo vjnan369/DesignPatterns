@@ -1,5 +1,8 @@
 package com.DesignPatterns.structural.Decorator;
 
+//Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects
+// inside special wrapper objects that contain the behaviors.
+// Use the pattern when it’s awkward or not possible to extend an object’s behavior using inheritance.
 public class Medium2 {
 }
 

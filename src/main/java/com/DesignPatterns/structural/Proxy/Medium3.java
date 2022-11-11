@@ -1,6 +1,8 @@
 package com.DesignPatterns.structural.Proxy;
 
 //https://medium.com/sde-base/proxy-pattern-in-java-94fa47f38d95
+//Proxy design pattern is used to control access to another object, which may be secure, expensive etc to create.
+//The Proxy design pattern is part of the Structural Design Pattern Family, it let us create a placeholder or substitute for a real object
 public class Medium3 {
 
 }

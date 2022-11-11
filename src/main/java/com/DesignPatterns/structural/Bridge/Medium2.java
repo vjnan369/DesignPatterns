@@ -1,5 +1,7 @@
 package com.DesignPatterns.structural.Bridge;
-
+//Bridge is a structural design pattern that lets you split a large class or a set of closely related classes into
+// two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
+//Decouples an abstraction from its implementation so that the two can vary independently
 //https://medium.com/@mertgltekin_58750/structural-design-patterns-2-bridge-pattern-7ee8d240ab59
 public class Medium2 {
 }

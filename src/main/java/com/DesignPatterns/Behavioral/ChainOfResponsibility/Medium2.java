@@ -1,6 +1,10 @@
 package com.DesignPatterns.Behavioral.ChainOfResponsibility;
 
-
+//Chain of Responsibility is a behavioral design pattern that lets you
+// pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process
+// the request or to pass it to the next handler in the chain.
+//Chain of responsibility pattern is a behavioral design pattern that we use to achieve
+// loose coupling in our software design, where a request from the client is passed to a chain of objects to process them
 public class Medium2 {
 }
 

@@ -1,87 +1,22 @@
 package com.MultiThreading;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class Tester {
-}
-
-class Example2 {
-    static class MyThread extends Thread{
-        public void run(){
-            System.out.println("staretd!");
-            System.out.println("ended!");
-        }
-    }
     public static void main(String[] args) {
-        MyThread myThread = new MyThread();
-        myThread.start();
+        ExecutorService executorService = Executors.newFixedThreadPool(3);
+        executorService.execute(getRunnable("1.1"));
+        executorService.shutdown();
     }
-}
 
-class Example3 {
-    private int counter = 1;
-    private boolean isEven = false;
-    static class MyRunnable implements Runnable{
-
-        public void run(){
-            System.out.println("staretd runnable!");
-            System.out.println("ended runnable!");
-        }
-    }
-    public static void main(String[] args) {
-
-//        Runnable runnable = () -> {
-//            System.out.println("started!");
-//            System.out.println("ended!");
-//        };
-
-        Example3 example3 = new Example3();
-        MyRunnable myRunnable1 = new MyRunnable(){
-            public void run(){
-                example3.printOddNumber();
+    private static Runnable getRunnable(String str){
+        return new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("executing: " + Thread.currentThread().getName());
             }
         };
-        MyRunnable myRunnable2 = new MyRunnable(){
-            public void run(){
-                example3.printEvenNumber();
-            }
-        };
-        Thread thread1 = new Thread(myRunnable1, "t1");
-        thread1.start();
-        Thread thread2 = new Thread(myRunnable2, "t2");
-        thread2.start();
-    }
-
-    private void printOddNumber(){
-        synchronized (this){
-            while(counter<10){
-                while(isEven){
-                    try {
-                        wait();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-                System.out.println(counter + " " + " by " + Thread.currentThread().getName());
-                counter++;
-                isEven = true;
-                notify();
-            }
-        }
-    }
-    private void printEvenNumber(){
-        synchronized (this){
-            while(counter<10){
-                while(!isEven){
-                    try {
-                        wait();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-                System.out.println(counter + " "+ " by " + Thread.currentThread().getName());
-                counter++;
-                isEven = false;
-                notify();
-            }
-        }
     }
 }
+
